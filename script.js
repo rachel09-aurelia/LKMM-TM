@@ -1,15 +1,35 @@
-console.log("Website LKMM aktif");
+const button = document.getElementById('exploreBtn');
 
-// contoh
-document.querySelectorAll("nav li").forEach(item => {
-    item.addEventListener("click", () => {
-        alert("Kamu klik:" + item.innerText);
+button.addEventListener('click', () => {
+    document.getElementById('about').scrollIntoView({
+        behavior: 'smooth'
     });
 });
-document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        target.scrollIntoView({ behavior: "smooth"});
-    });
-});
+
+const text ="Innovating Microbiology Testing";
+const typingElement = document.querySelector('.typing-text');
+
+let index = 0;
+
+function typeText() {
+
+    if(index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeText, 80);
+    }
+}
+
+typeText();
+function openModal () {
+    document.getElementById("reportModal").style.display = "block";
+}
+function closeModal () {
+    document.getElementById("reportModal").style.display = "none";
+}
+function openOrderModal() {
+    document.getElementById("orderModal").style.display = "block";
+}
+function closeOrderModal() {
+    document.getElementById("orderModal").style.display = "none";
+}

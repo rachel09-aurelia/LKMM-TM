@@ -1,68 +1,189 @@
 <!DOCTYPE html>
-<html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <title>LKMM TM ITS 2026</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<html lang="'en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BactoSense</title>
 
-    <!--NAVBAR-->
-    <nav>
-        <h2>LKMM TM</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#oprec">Open Recruitment</a></li>
-            <li><a href="#tim">Tim Jejak</a></li>
-            <li><a href="#contant">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="about">
-        <h2>About</h2>
-        <h3>General</h3>
-        <p>LKMM TM ITS merupakan wadah pelatihan untuk meningkatkan manajemen organisasi, membangun jiwa kepemimpinan, berpikir kritis, dan berdasar dengan iklim diskusi.</p>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleappis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Navbar-->
+    <header>
+        <div class="logo">BactoSense</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!--Hero-->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h1 class="typing-text"></h1>
+
+            <img src="images/gambar 1.jpg" class="hero-image">
+
+
+            <p>
+                Digital microbiology platform with real-time tracking and laboratory services.
+            </p>
+
+            <button id="exploreBtn">
+                Explore More
+            </button>
+        </div>
+
     </section>
 
-    <h3>Sejarah</h3>
-    <p>LKKMM TM ITS dimulai dari forkom Berani Mati</p>
-</section>
 
-<!-- OPEN RECRUITMENT -->
-<section id="oprec">
-    <h2>Open Recruitment</h2>
+    <!--About-->
+    <section class="about" id="about">
 
-    <h3>Pemberkasan</h3>
-    <ul>
-        <li>Guidebook</li>
-        <li>Pengumpulan</li>
-        <li>Pengumuman Lolos Berkas</li>
-    </ul>
-    <h3>Tes Tulis</h3>
-    <ul>
-        <li>Jadwal Tes Tulis</li>
-        <li>Pengumuman Lolos Tes Tulis</li>
-    </ul>
-    <h3>Interview</h3>
-    <ul>
-        <li>Jadwal Interview</li>
-        <li>Link Zoom</li>
-        <li>Pengumuman Lolos Interview</li>
-    </ul>
-</section>
+        <h2>About Us</h2>
 
-<!-- TIM-->
-<section id="tim">
-    <h2>Tim Pemandu Jejak</h2>
-    <p>Navigator Jejak</p>
-    <p>Kompas Jejak</p>
-</section>
+        <p>
+            BactoSense is a biotechnology-based laboratory platform that helps students, researchers, and industries access microbiolgy testing more easily and efficiently.
+        </p>
 
-<!--CONTACT-->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>logo sosmed</p>
-</section>
+    </section>
 
+
+    <!--Features-->
+    <section class="features" id="features">
+
+        <h2>Main Features</h2>
+
+        <div class="card-container">
+
+            <div class="card" onclick="openModal()">
+                <h3>Digital Reports</h3>
+                <p>Receive accurate microbiology reports online</p>
+            </div>
+        <a href="https://forms.gle/U4g5hhwhACNEh8SC7" target="_blank" class="card-link">
+        
+            <div class="card">
+                <h3>Sample Pick-Up</h3>
+                <p>Convenient sample collection service</p>
+            </div>
+
+
+        </a>
+            
+            <div class="card" onclick="openOrderModal()">
+                <h3>Place an Order!</h3>
+                <p>
+                    Submit your sample here!
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Team-->
+    <section class="team" id="team">
+
+        <h2>Our Team</h2>
+
+        <div class="team-container">
+
+            <div class="team-card">
+
+                <img src="images/naura.jpg" class="team-photo">
+
+            <a href="https://www.linkedin.com/in/naurah215?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="member-link">
+               <h4 class="member-name">Naurah</h4>
+
+            </a>
+
+
+                <h3>Research Team</h3>
+                <p>Microbiology Specialists</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/lala.jpg" class="team-photo">
+            
+            <a href="https://www.linkedin.com/in/naila-ayu-ramadhanti-wibowo-419180322?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="member-link">
+               <h4 class="member-name">Naila Ayu Ramadhanti Wibowo</h4>
+            </a>
+
+                <h3>Lab Analysts</h3>
+                <p>Testing & Validation</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/chel.jpg" class="team-photo">
+            
+            <a href="https://www.linkedin.com/in/christiane-aurelia/" target="_blank" class="member-link">
+               <h4 class="member-name">Christiane Aurelia Rachel</h4>
+            </a>
+
+
+                <h3>Developers</h3>
+                <p>Digital Platform Team</p>
+            </div>
+
+        </div> 
+
+    </section>
+
+
+    <!--Contact-->
+    <section class="contact" id="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email: bactosense@gmail.com</p>
+        <p>Location: Surabaya, Indonesia</p>
+
+    </section>
+
+<!--Modal-->
+<div id="reportModal" class="modal">
+    
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>Digital Report Preview </h2>
+        
+        <img src="images/gambar 2.jpg" class="report-image">
+
+    </div>
+</div>
+
+<!--Order Modal-->
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeOrderModal()">&times;</span>
+        <h2>Place an Order</h2>
+        <form class="order-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Type of Sample" required>
+            <input type="text" placeholder="Kind of Analyze" required>
+            <textarea placeholder="Additional Notes"></textarea>
+            
+            <button type="submit">
+                Submit Order
+            </button>
+        </form>
+    </div>
+</div>
     <script src="script.js"></script>
-    </body>
+
+</body>
 </html>
